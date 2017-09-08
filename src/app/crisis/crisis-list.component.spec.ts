@@ -31,9 +31,10 @@ describe('Test crisis list component', () => {
   });
 
   it('should display a different test title', () => {
-    comp.title = 'Test Title';
+    const TEST_TITLE = 'Test Title';
+    comp.title = TEST_TITLE;
     fixture.detectChanges();
-    expect(el.textContent).toContain('Test Title');
+    expect(el.textContent).toContain(TEST_TITLE);
   });
 
 });
